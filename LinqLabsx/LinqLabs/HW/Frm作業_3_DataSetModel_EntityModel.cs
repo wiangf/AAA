@@ -189,6 +189,9 @@ namespace LinqLabs.HW
                     };
             dataGridView1.DataSource = q1.ToList();
 
+
+
+
             var q2 = from a in q1
                      select new
                      {
@@ -197,18 +200,18 @@ namespace LinqLabs.HW
                      };
             dataGridView2.DataSource = q2.ToList();
 
-            var q3 = from b in q2
-                     group b by b.FirstName into g
-                     select new
-                     {
-                         g.Key,
-                         TotalSales = g.Sum(b => b.TotalPrice)
-                     };
-            var q4 = from c in q3
-                     orderby c.TotalSales descending
-                     select c;
+            //var q3 = from b in q2
+            //         group b by b.FirstName into g
+            //         select new
+            //         {
+            //             g.Key,
+            //             TotalSales = g.Sum(b => b.TotalPrice)
+            //         };
+            //var q4 = from c in q3
+            //         orderby c.TotalSales descending
+            //         select c;
 
-            dataGridView2.DataSource = q4.Take(5).ToList();
+            //dataGridView2.DataSource = q4.Take(5).ToList();
 
         }
 

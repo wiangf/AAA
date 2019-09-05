@@ -96,7 +96,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(665, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(666, 199);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView3
@@ -107,7 +107,7 @@
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(665, 96);
+            this.dataGridView3.Size = new System.Drawing.Size(666, 96);
             this.dataGridView3.TabIndex = 0;
             // 
             // dataGridView2
@@ -118,7 +118,7 @@
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(665, 100);
+            this.dataGridView2.Size = new System.Drawing.Size(666, 100);
             this.dataGridView2.TabIndex = 0;
             // 
             // splitContainer4
@@ -136,7 +136,7 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.dataGridView3);
-            this.splitContainer4.Size = new System.Drawing.Size(665, 202);
+            this.splitContainer4.Size = new System.Drawing.Size(666, 202);
             this.splitContainer4.SplitterDistance = 100;
             this.splitContainer4.SplitterWidth = 6;
             this.splitContainer4.TabIndex = 1;
@@ -156,7 +156,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer5);
-            this.splitContainer3.Size = new System.Drawing.Size(665, 681);
+            this.splitContainer3.Size = new System.Drawing.Size(666, 681);
             this.splitContainer3.SplitterDistance = 202;
             this.splitContainer3.SplitterWidth = 6;
             this.splitContainer3.TabIndex = 0;
@@ -175,7 +175,7 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.treeView1);
-            this.splitContainer5.Size = new System.Drawing.Size(665, 473);
+            this.splitContainer5.Size = new System.Drawing.Size(666, 473);
             this.splitContainer5.SplitterDistance = 219;
             this.splitContainer5.SplitterWidth = 6;
             this.splitContainer5.TabIndex = 3;
@@ -197,7 +197,7 @@
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(440, 473);
+            this.treeView1.Size = new System.Drawing.Size(441, 473);
             this.treeView1.TabIndex = 2;
             // 
             // splitContainer2
@@ -215,7 +215,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(665, 886);
+            this.splitContainer2.Size = new System.Drawing.Size(666, 886);
             this.splitContainer2.SplitterDistance = 199;
             this.splitContainer2.SplitterWidth = 6;
             this.splitContainer2.TabIndex = 0;
@@ -240,7 +240,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1148, 886);
-            this.splitContainer1.SplitterDistance = 477;
+            this.splitContainer1.SplitterDistance = 476;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 4;
             // 
@@ -457,7 +457,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(22, 32);
+            this.button6.Location = new System.Drawing.Point(56, 30);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(267, 34);

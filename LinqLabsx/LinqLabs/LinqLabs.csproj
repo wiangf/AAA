@@ -96,6 +96,12 @@
     <Compile Include="Employee.cs">
       <DependentUpon>northwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="HW\FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="HW\Frm作業_3_DataSetModel_EntityModel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="5. FrmLinq_To_Entity.resx">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HW\Frm作業_3_DataSetModel_EntityModel.resx">
       <DependentUpon>Frm作業_3_DataSetModel_EntityModel.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace Starter
             //Application.Run(new FrmHelloLinq());
             //Application.Run(new FrmLangForLINQ());
             //Application.Run(new FrmLINQ架構介紹_InsideLINQ());
-            Application.Run(new Frm作業_3_DataSetModel_EntityModel());
+            Application.Run(new FrmTest());
             //Application.Run(new FrmLinq_To_Entity());
         }
     }

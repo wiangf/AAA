@@ -237,5 +237,29 @@ namespace LinqLabs.HW
                      select p).Any();
             MessageBox.Show(q + "");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {//尋找低中高架產品
+            var q = from p in dbContext.Products.AsEnumerable()
+                    group p by MyClassification(p.UnitPrice) into g
+                    select new
+                    {
+                        g.Key,
+                        Count=g.Count()
+                    };
+            dataGridView1.DataSource = q.ToList();
+        }
+
+        private string MyClassification(decimal? unitPrice)
+        {
+            if (unitPrice > 100)
+            {
+                return "high";
+            }
+            else
+            {
+                return "low";
+            }
+        }
     }
 }

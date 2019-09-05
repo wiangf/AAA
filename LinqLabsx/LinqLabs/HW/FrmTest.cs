@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace LinqLabs.HW
 {
@@ -29,7 +30,7 @@ namespace LinqLabs.HW
                         totalSales = g.Sum(od => od.UnitPrice * od.ProductID)
                     };
             //那一個月銷售最不好,銷售最好
-            var q2=q.OrderBy(c => c.totalSales).ToList();
+            var q2=q.OrderBy(c => c.totalSales).ToList(); 
             string a =( q2.Take(1).Select(c => c.Key).First().ToString());
             string b=(q2.Take(1).Select(c => c.totalSales).First().ToString());
             MessageBox.Show($"{a}月銷售最不好,該月總銷售{b}元");
@@ -39,7 +40,14 @@ namespace LinqLabs.HW
             MessageBox.Show($"{d}月銷售最好,該月總銷售{y}元");
 
             dataGridView1.DataSource = q2.ToList();
-                  
+
+            chart1.DataSource = q2;
+            chart1.Series[0].XValueMember = "Key";
+            chart1.Series[0].YValueMembers = "totalSales";
+            chart1.Series[0].ChartType = SeriesChartType.RangeBar;
+
+
+
         }
         
         
@@ -54,7 +62,6 @@ namespace LinqLabs.HW
             }
 
             //優良 80 良>60 不良<60
-
             var q=scores.GroupBy(s=>MyJudge(s)).Select(k=>new { k.Key,Count=k.Count()});
             dataGridView1.DataSource= q.OrderBy(a=>a.Key).ToList();
         }
